@@ -1,4 +1,4 @@
-package com.javaguides.javaswing.reg;
+package com.reg_from;
 
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -153,7 +153,7 @@ public class UserRegistration extends JFrame {
                 }
 
                 try {
-                    Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/swing_demo", "root", "tiger@1450");
+                    Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/swing_demo", "root", "tiger");
 
                     String query = "INSERT INTO account values('" + firstName + "','" + lastName + "','" + userName + "','" +
                         password + "','" + emailId + "','" + mobileNumber + "')";
